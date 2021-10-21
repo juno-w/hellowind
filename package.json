@@ -1,0 +1,13 @@
+{
+  "name": "hellowind",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "watch": "npx tailwindcss -i src/assets/tailwind.css -o dist/css/tailwind.css --jit -w -m"
+  },
+  "dependencies": {
+    "@tailwindcss/forms": "^0.3.4",
+    "tailwindcss": "^2.2.16"
+  }
+}
