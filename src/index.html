@@ -10,15 +10,19 @@
   <body class="tw-bg-gray-700">
     <form x-data="contactForm" x-on:submit.prevent="submit" class="tw-space-y-4 tw-mx-auto">
       <div>
-        <div class="tw-border tw-border-solid tw-border-gray-300 tw-rounded tw-flex tw-flex-col tw-py-1.5 tw-px-2 tw-bg-white">
-          <label for="name" class="tw-font-normal tw-text-gray-500 tw-text-sm tw-font-sans"
+        <div
+          class="
+            tw-border tw-border-solid tw-text-left tw-border-gray-300 tw-rounded tw-flex tw-flex-col tw-py-1.5 tw-px-2 tw-bg-white
+          "
+        >
+          <label for="name" class="tw-font-normal tw-m-0 tw-text-gray-500 tw-text-sm tw-font-sans"
             >Name <span class="tw-text-gray-400">(Required)</span></label
           >
           <input
             x-model="fields.name"
             id="name"
             type="text"
-            class="tw-border-0 focus:tw-outline-none tw-text-gray-600 tw-text-base tw-px-0"
+            class="tw-border-0 tw-h-auto tw-p-0 tw-m-0 focus:tw-outline-none tw-text-gray-600 tw-text-base tw-px-0"
             required
           />
         </div>
@@ -27,15 +31,19 @@
         </template>
       </div>
       <div>
-        <div class="tw-border tw-border-solid tw-border-gray-300 tw-rounded tw-flex tw-flex-col tw-py-1.5 tw-px-2 tw-bg-white">
-          <label for="email" class="tw-font-normal tw-text-gray-500 tw-text-sm tw-font-sans"
+        <div
+          class="
+            tw-border tw-border-solid tw-text-left tw-border-gray-300 tw-rounded tw-flex tw-flex-col tw-py-1.5 tw-px-2 tw-bg-white
+          "
+        >
+          <label for="email" class="tw-font-normal tw-m-0 tw-text-gray-500 tw-text-sm tw-font-sans"
             >E-Mail <span class="tw-text-gray-400">(Required)</span></label
           >
           <input
             x-model="fields.email"
             id="email"
             type="email"
-            class="tw-border-0 focus:tw-outline-none tw-text-gray-600 tw-text-base tw-px-0"
+            class="tw-border-0 tw-h-auto tw-p-0 tw-m-0 focus:tw-outline-none tw-text-gray-600 tw-text-base tw-px-0"
             required
           />
         </div>
@@ -44,15 +52,19 @@
         </template>
       </div>
       <div>
-        <div class="tw-border tw-border-solid tw-border-gray-300 tw-rounded tw-flex tw-flex-col tw-py-1.5 tw-px-2 tw-bg-white">
-          <label for="contact_number" class="tw-font-normal tw-text-gray-500 tw-text-sm tw-font-sans"
+        <div
+          class="
+            tw-border tw-border-solid tw-text-left tw-border-gray-300 tw-rounded tw-flex tw-flex-col tw-py-1.5 tw-px-2 tw-bg-white
+          "
+        >
+          <label for="contact_number" class="tw-font-normal tw-m-0 tw-text-gray-500 tw-text-sm tw-font-sans"
             >Contact Number <span class="tw-text-gray-400">(Required)</span></label
           >
           <input
             x-model="fields.contact_number"
             id="contact_number"
             type="tel"
-            class="tw-border-0 focus:tw-outline-none tw-text-gray-600 tw-text-base tw-px-0"
+            class="tw-border-0 tw-h-auto tw-p-0 tw-m-0 focus:tw-outline-none tw-text-gray-600 tw-text-base tw-px-0"
             required
           />
         </div>
@@ -61,14 +73,18 @@
         </template>
       </div>
       <div>
-        <div class="tw-border tw-border-solid tw-border-gray-300 tw-rounded tw-flex tw-flex-col tw-py-1.5 tw-px-2 tw-bg-white">
-          <label for="message" class="tw-font-normal tw-text-gray-500 tw-text-sm tw-font-sans">Message</label>
+        <div
+          class="
+            tw-border tw-border-solid tw-text-left tw-border-gray-300 tw-rounded tw-flex tw-flex-col tw-py-1.5 tw-px-2 tw-bg-white
+          "
+        >
+          <label for="message" class="tw-font-normal tw-m-0 tw-text-gray-500 tw-text-sm tw-font-sans">Message</label>
           <textarea
             x-model="fields.message"
             id="message"
             rows="5"
             type="text"
-            class="tw-border-0 focus:tw-outline-none tw-text-gray-600 tw-text-base tw-px-0"
+            class="tw-border-0 tw-h-auto tw-p-0 tw-m-0 tw-font-sans focus:tw-outline-none tw-text-gray-600 tw-text-base tw-px-0"
           ></textarea>
         </div>
         <template x-if="errors && errors.message">
@@ -80,8 +96,8 @@
           x-text="busy ? 'Submitting...' : 'Submit'"
           type="submit"
           class="
-            tw-bg-[#c00001]
-            hover:tw-bg-[#950001]
+            tw-bg-[#0b442c]
+            hover:tw-bg-[#0b3c27]
             disabled:tw-cursor-wait disabled:tw-opacity-50
             tw-transition tw-text-white tw-w-full tw-rounded tw-py-2 tw-border-none tw-text-lg
           "
