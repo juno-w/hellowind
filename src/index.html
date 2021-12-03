@@ -27,7 +27,7 @@
           />
         </div>
         <template x-if="errors && errors.name">
-          <p class="tw-text-red-600 tw-text-sm tw-mt-1" x-text="errors.name"></p>
+          <p class="tw-text-red-600 tw-text-sm tw-mt-1 tw-font-sans" x-text="errors.name"></p>
         </template>
       </div>
       <div>
@@ -48,7 +48,7 @@
           />
         </div>
         <template x-if="errors && errors.email">
-          <p class="tw-text-red-600 tw-text-sm tw-mt-1" x-text="errors.email"></p>
+          <p class="tw-text-red-600 tw-text-sm tw-mt-1 tw-font-sans" x-text="errors.email"></p>
         </template>
       </div>
       <div>
@@ -69,7 +69,7 @@
           />
         </div>
         <template x-if="errors && errors.contact_number">
-          <p class="tw-text-red-600 tw-text-sm tw-mt-1" x-text="errors.email"></p>
+          <p class="tw-text-red-600 tw-text-sm tw-mt-1 tw-font-sans" x-text="errors.email"></p>
         </template>
       </div>
       <div>
@@ -88,19 +88,14 @@
           ></textarea>
         </div>
         <template x-if="errors && errors.message">
-          <p class="tw-text-red-600 tw-text-sm tw-mt-1" x-text="errors.email"></p>
+          <p class="tw-text-red-600 tw-text-sm tw-mt-1 tw-font-sans" x-text="errors.email"></p>
         </template>
       </div>
       <div>
         <button
           x-text="busy ? 'Submitting...' : 'Submit'"
           type="submit"
-          class="
-            tw-bg-[#0b442c]
-            hover:tw-bg-[#0b3c27]
-            disabled:tw-cursor-wait disabled:tw-opacity-50
-            tw-transition tw-text-white tw-w-full tw-rounded tw-py-2 tw-border-none tw-text-lg
-          "
+          class=" tw-bg-gray-600 hover:tw-bg-gray-700 disabled:tw-cursor-wait disabled:tw-opacity-50 tw-transition tw-text-white tw-w-full tw-rounded tw-py-2 tw-border-none tw-text-lg tw-cursor-pointer"
         >
           Submit
         </button>
